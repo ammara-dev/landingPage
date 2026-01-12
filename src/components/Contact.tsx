@@ -106,7 +106,7 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="text-amber-500 text-sm font-semibold uppercase tracking-widest">
+          <span className="text-stone-600 text-sm font-semibold uppercase tracking-widest">
             Get In Touch
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mt-3 mb-4">
@@ -123,10 +123,10 @@ export default function Contact() {
             {contactInfo.map((item, index) => (
               <div
                 key={index}
-                className="flex items-start gap-4 p-5 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:border-amber-200 transition-all duration-300"
+                className="flex items-start gap-4 p-5 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:border-stone-300 transition-all duration-300"
               >
-                <div className="flex-shrink-0 w-12 h-12 bg-amber-50 rounded-lg flex items-center justify-center">
-                  <item.icon className="w-6 h-6 text-amber-500" />
+                <div className="flex-shrink-0 w-12 h-12 bg-stone-100 rounded-lg flex items-center justify-center">
+                  <item.icon className="w-6 h-6 text-stone-600" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">{item.title}</h4>
@@ -143,7 +143,7 @@ export default function Contact() {
             <div className="relative h-48 rounded-xl overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center">
                 <div className="text-center text-white">
-                  <MapPin className="w-10 h-10 mx-auto mb-2 text-amber-500" />
+                  <MapPin className="w-10 h-10 mx-auto mb-2 text-stone-400" />
                   <p className="font-medium">Dubai Hills Estate</p>
                   <p className="text-sm text-gray-400">Mohammed Bin Rashid City</p>
                 </div>

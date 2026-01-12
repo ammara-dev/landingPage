@@ -2,7 +2,7 @@ export default function Newsletter() {
   return (
     <section id="register" className="py-16 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative rounded-2xl overflow-hidden bg-gradient-to-r from-amber-500 to-orange-500 p-8 md:p-12">
+        <div className="relative rounded-2xl overflow-hidden bg-gradient-to-r from-stone-600 to-stone-500 p-8 md:p-12">
           <div className="max-w-xl mx-auto text-center">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
               Register Your Interest Today

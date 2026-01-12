@@ -34,8 +34,8 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-32">
         <div className="max-w-3xl">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-amber-500/20 backdrop-blur-sm text-amber-400 px-4 py-2 rounded-full text-sm mb-6 border border-amber-500/30">
-            <span className="w-2 h-2 bg-amber-400 rounded-full animate-pulse"></span>
+          <div className="inline-flex items-center gap-2 bg-stone-500/20 backdrop-blur-sm text-stone-300 px-4 py-2 rounded-full text-sm mb-6 border border-stone-500/30">
+            <span className="w-2 h-2 bg-stone-300 rounded-full animate-pulse"></span>
             Dubai&apos;s Newest World-Class High-End Development
           </div>
 
@@ -76,7 +76,7 @@ export default function Hero() {
                   key={index}
                   className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm border border-white/20"
                 >
-                  <span className="w-1.5 h-1.5 bg-amber-400 rounded-full"></span>
+                  <span className="w-1.5 h-1.5 bg-stone-400 rounded-full"></span>
                   {item}
                 </span>
               ))}

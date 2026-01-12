@@ -74,8 +74,8 @@ export default function Amenities() {
               key={index}
               className="bg-white rounded-2xl p-6 text-center hover:shadow-lg transition-shadow"
             >
-              <div className="w-14 h-14 mx-auto mb-4 bg-amber-100 rounded-xl flex items-center justify-center">
-                <amenity.icon className="w-7 h-7 text-amber-600" />
+              <div className="w-14 h-14 mx-auto mb-4 bg-stone-100 rounded-xl flex items-center justify-center">
+                <amenity.icon className="w-7 h-7 text-stone-600" />
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">{amenity.title}</h3>
               <p className="text-gray-500 text-sm">{amenity.description}</p>

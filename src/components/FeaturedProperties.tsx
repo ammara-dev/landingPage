@@ -75,14 +75,14 @@ export default function FeaturedProperties() {
                   fill
                   className="object-cover"
                 />
-                <span className="absolute top-4 left-4 bg-amber-500 text-white text-xs font-medium px-3 py-1 rounded-full">
+                <span className="absolute top-4 left-4 bg-stone-600 text-white text-xs font-medium px-3 py-1 rounded-full">
                   {property.status}
                 </span>
               </div>
 
               {/* Content */}
               <div className="p-6">
-                <p className="text-amber-600 text-sm font-medium mb-1">
+                <p className="text-stone-600 text-sm font-medium mb-1">
                   {property.location}
                 </p>
 

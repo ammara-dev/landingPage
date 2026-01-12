@@ -36,7 +36,7 @@ export default function Location() {
             {/* Travel Times */}
             <div className="space-y-4 mb-8">
               <h3 className="font-semibold text-gray-900 flex items-center gap-2">
-                <Clock className="w-5 h-5 text-amber-500" />
+                <Clock className="w-5 h-5 text-stone-600" />
                 Travel Times
               </h3>
               <div className="grid gap-3">
@@ -46,7 +46,7 @@ export default function Location() {
                     className="flex items-center justify-between p-4 bg-gray-50 rounded-xl"
                   >
                     <span className="text-gray-700">{location.name}</span>
-                    <span className="text-amber-600 font-medium">{location.time}</span>
+                    <span className="text-stone-600 font-medium">{location.time}</span>
                   </div>
                 ))}
               </div>
@@ -55,7 +55,7 @@ export default function Location() {
             {/* Nearby Destinations */}
             <div>
               <h3 className="font-semibold text-gray-900 flex items-center gap-2 mb-4">
-                <MapPin className="w-5 h-5 text-amber-500" />
+                <MapPin className="w-5 h-5 text-stone-600" />
                 Nearby Destinations
               </h3>
               <div className="flex flex-wrap gap-2">
