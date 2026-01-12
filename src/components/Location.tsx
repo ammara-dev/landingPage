@@ -21,12 +21,12 @@ export default function Location() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <div data-aos="fade-up">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               Strategic Location
             </h2>
             
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 mb-6 leading-relaxed text-lg">
               The Heights by Emaar is located in Dubailand along the E611 (Emirates Road), 
               offering direct access to major destinations across Dubai. Positioned between 
               The Valley and other emerging residential hubs, The Heights enjoys a well-connected 
@@ -36,17 +36,19 @@ export default function Location() {
             {/* Travel Times */}
             <div className="space-y-4 mb-8">
               <h3 className="font-semibold text-gray-900 flex items-center gap-2">
-                <Clock className="w-5 h-5 text-stone-600" />
+                <Clock className="w-5 h-5 text-[#1F2937]" />
                 Travel Times
               </h3>
               <div className="grid gap-3">
                 {locations.map((location, index) => (
                   <div
                     key={index}
-                    className="flex items-center justify-between p-4 bg-gray-50 rounded-xl"
+                    className="flex items-center justify-between p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all hover:shadow-md"
+                    data-aos="fade-up"
+                    data-aos-delay={index * 100}
                   >
-                    <span className="text-gray-700">{location.name}</span>
-                    <span className="text-stone-600 font-medium">{location.time}</span>
+                    <span className="text-gray-700 font-medium">{location.name}</span>
+                    <span className="text-[#1F2937] font-semibold">{location.time}</span>
                   </div>
                 ))}
               </div>
@@ -55,14 +57,14 @@ export default function Location() {
             {/* Nearby Destinations */}
             <div>
               <h3 className="font-semibold text-gray-900 flex items-center gap-2 mb-4">
-                <MapPin className="w-5 h-5 text-stone-600" />
+                <MapPin className="w-5 h-5 text-[#1F2937]" />
                 Nearby Destinations
               </h3>
               <div className="flex flex-wrap gap-2">
                 {nearbyDestinations.map((destination, index) => (
                   <span
                     key={index}
-                    className="px-4 py-2 bg-gray-100 rounded-full text-gray-700 text-sm"
+                    className="px-4 py-2 bg-[#1F2937]/10 rounded-full text-[#1F2937] text-sm font-medium hover:bg-[#1F2937]/20 transition-colors"
                   >
                     {destination}
                   </span>
@@ -71,22 +73,19 @@ export default function Location() {
             </div>
           </div>
 
-          {/* Image */}
-          <div className="relative">
-            <div className="relative h-[500px] rounded-2xl overflow-hidden">
+          {/* Map Image */}
+          <div className="relative" data-aos="fade-up" data-aos-delay="200">
+            <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
               <Image
-                src="https://heightscountryclub.ae/wp-content/uploads/2024/04/heights-country-club-dubai.jpeg"
-                alt="The Heights Location"
+                src="/The-Heights-Country-Club-Emaar-Location-map.jpg"
+                alt="The Heights Location Map"
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-              <div className="absolute bottom-6 left-6 right-6">
-                <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4">
-                  <p className="text-gray-900 font-semibold">E611 Emirates Road, Dubailand</p>
-                  <p className="text-gray-500 text-sm">Dubai, United Arab Emirates</p>
-                </div>
-              </div>
+            </div>
+            <div className="absolute -bottom-6 -right-6 bg-[#1F2937] text-white rounded-2xl p-6 shadow-xl max-w-xs">
+              <p className="font-bold text-lg mb-1">E611 Emirates Road, Dubailand</p>
+              <p className="text-white/80 text-sm">Dubai, United Arab Emirates</p>
             </div>
           </div>
         </div>

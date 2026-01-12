@@ -6,10 +6,11 @@ import { useState, useEffect } from "react";
 
 const navLinks = [
   { name: "Home", href: "#home", sectionId: "home" },
+  { name: "Amenities", href: "#amenities", sectionId: "amenities" },
   { name: "Properties", href: "#properties", sectionId: "properties" },
-  { name: "Gallery", href: "#gallery", sectionId: "gallery" },
+  { name: "Floor Plans", href: "#floor-plan", sectionId: "floor-plan" },
   { name: "Location", href: "#location", sectionId: "location" },
-  { name: "FAQs", href: "#faqs", sectionId: "faqs" },
+  { name: "Payment Plan", href: "#payment-plan", sectionId: "payment-plan" },
   { name: "Contact", href: "#contact", sectionId: "contact" },
 ];
 
@@ -97,10 +98,10 @@ export default function Header() {
 
           {/* CTA Button */}
           <Link
-            href="#register"
+            href="#contact"
             className="hidden md:flex items-center gap-2 bg-gray-900 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors"
           >
-            Register Interest
+            Contact Us
             <ArrowUpRight className="w-4 h-4" />
           </Link>
 

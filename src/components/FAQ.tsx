@@ -77,10 +77,10 @@ export default function FAQ() {
         {/* Read More Button */}
         <div className="mt-8 text-center">
           <Link
-            href="#more-faqs"
+            href="#contact"
             className="inline-flex items-center gap-2 bg-white border border-gray-200 px-5 py-2.5 rounded-full text-sm font-medium hover:bg-gray-50 transition-colors"
           >
-            Read More FAQs
+            Contact Us for More Info
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>

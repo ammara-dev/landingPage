@@ -11,6 +11,8 @@ import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Newsletter from "@/components/Newsletter";
 import Footer from "@/components/Footer";
+import PaymentPlan from "@/components/PaymentPlan";
+import FloorPlan from "@/components/FloorPlan";
 
 export default function Home() {
   return (
@@ -18,13 +20,15 @@ export default function Home() {
       <Header />
       <Hero />
       <LuxuryLiving />
-      <FeaturedProperties />
-      <Gallery />
       <Amenities />
+      <FeaturedProperties />
+      <FloorPlan />
+      <Gallery />
       <Location />
       <Excellence />
+      <PaymentPlan />
       <FAQ />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Contact />
       <Newsletter />
       <Footer />

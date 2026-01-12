@@ -28,10 +28,10 @@ export default function Footer() {
               wellness-focused community.
             </p>
             <Link
-              href="#register"
-              className="inline-flex items-center gap-2 bg-stone-600 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-stone-700 transition-colors"
+              href="#contact"
+              className="inline-flex items-center gap-2 bg-[#1F2937] text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-[#374151] transition-all hover:shadow-xl hover:scale-105"
             >
-              Register Your Interest
+              Contact Us Now
             </Link>
           </div>
 

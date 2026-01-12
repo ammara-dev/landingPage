@@ -102,8 +102,8 @@ export default function Contact() {
     <section id="contact" className="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
-          <span className="text-stone-600 text-sm font-semibold uppercase tracking-widest">
+        <div className="text-center mb-16" data-aos="fade-up">
+          <span className="text-[#1F2937] text-sm font-semibold uppercase tracking-widest">
             Get In Touch
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mt-3 mb-4">

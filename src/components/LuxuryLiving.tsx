@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { Building2 } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 export default function LuxuryLiving() {
   return (
@@ -7,20 +8,20 @@ export default function LuxuryLiving() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <div data-aos="fade-up">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               Luxury Living at The Heights
               <br />
               Country Club and Wellness
             </h2>
             
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-4 leading-relaxed text-lg">
               The Heights Country Club development promises to showcase the very best of
               Emaar&apos;s nearly 30 years of experience. An unparalleled 81 million square feet 
               development with a valuation of over AED 55 billion.
             </p>
             
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 mb-8 leading-relaxed">
               At The Heights community, Emaar is committed to enhancing lives by
               offering spaces designed to promote health and relaxation. Within the
               community, the centrally located wellness center acts as a comprehensive
@@ -30,47 +31,25 @@ export default function LuxuryLiving() {
               of thoughtfully planned open space.
             </p>
 
-            {/* Property Cards */}
-            <div className="grid sm:grid-cols-2 gap-6 mt-8">
-              <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-xl">
-                <div className="p-3 bg-white rounded-lg shadow-sm">
-                  <Building2 className="w-6 h-6 text-gray-700" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900">Serro at The Heights</h3>
-                  <p className="text-sm text-gray-500 mt-1">
-                    3, 4 and 5 Bedroom Villas. Full
-                    <br />
-                    Details Coming Soon
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-xl">
-                <div className="p-3 bg-white rounded-lg shadow-sm">
-                  <Building2 className="w-6 h-6 text-gray-700" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900">Salva at The Heights</h3>
-                  <p className="text-sm text-gray-500 mt-1">
-                    3, 4 and 5 Bedroom Villas. Full
-                    <br />
-                    Details Coming Soon
-                  </p>
-                </div>
-              </div>
-            </div>
+            <Link
+              href="#contact"
+              className="inline-flex items-center gap-2 bg-[#1F2937] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#374151] transition-all hover:shadow-xl hover:scale-105"
+            >
+              Learn More
+              <ArrowRight className="w-5 h-5" />
+            </Link>
           </div>
 
           {/* Image */}
-          <div className="relative">
-            <div className="relative h-[500px] rounded-2xl overflow-hidden">
+          <div className="relative" data-aos="fade-up" data-aos-delay="200">
+            <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="https://heightscountryclub.ae/wp-content/uploads/2024/05/The-Heights-Emaar.jpg"
-                alt="The Heights Emaar Luxury Villa"
+                src="/Community-view.jpg"
+                alt="The Heights Community View"
                 fill
                 className="object-cover"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1F2937]/20 to-transparent"></div>
             </div>
           </div>
         </div>

@@ -40,32 +40,34 @@ export default function FeaturedProperties() {
     <section id="properties" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="flex items-center justify-between mb-12">
+        <div className="flex items-center justify-between mb-12" data-aos="fade-up">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-2">
               Properties at The Heights
             </h2>
-            <p className="text-gray-600">
+            <p className="text-gray-600 text-lg">
               Discover an extensive selection of luxurious villas designed to offer
               <br />
               an unmatched living experience at The Heights Country Club & Wellness.
             </p>
           </div>
           <Link
-            href="#register"
-            className="hidden md:flex items-center gap-2 bg-white border border-gray-200 px-5 py-2.5 rounded-full text-sm font-medium hover:bg-gray-50 transition-colors"
+            href="#contact"
+            className="hidden md:flex items-center gap-2 bg-[#1F2937] text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-[#374151] transition-all hover:shadow-xl hover:scale-105"
           >
-            Register Interest
+            Contact Us Now
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
 
         {/* Property Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {properties.map((property) => (
+          {properties.map((property, index) => (
             <div
               key={property.id}
-              className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
+              className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
             >
               {/* Image */}
               <div className="relative h-64">
@@ -75,14 +77,14 @@ export default function FeaturedProperties() {
                   fill
                   className="object-cover"
                 />
-                <span className="absolute top-4 left-4 bg-stone-600 text-white text-xs font-medium px-3 py-1 rounded-full">
+                <span className="absolute top-4 left-4 bg-[#1F2937] text-white text-xs font-medium px-3 py-1 rounded-full">
                   {property.status}
                 </span>
               </div>
 
               {/* Content */}
               <div className="p-6">
-                <p className="text-stone-600 text-sm font-medium mb-1">
+                <p className="text-[#1F2937] text-sm font-medium mb-1">
                   {property.location}
                 </p>
 
@@ -103,8 +105,10 @@ export default function FeaturedProperties() {
                   </div>
                 </div>
 
-                <button className="w-full mt-6 bg-gray-900 text-white py-3 rounded-full font-medium hover:bg-gray-800 transition-colors">
-                  Register Interest
+                <button className="w-full mt-6 bg-[#1F2937] text-white py-3 rounded-full font-semibold hover:bg-[#374151] transition-all hover:shadow-lg">
+                  <Link href="#contact" className="block">
+                    Contact Us
+                  </Link>
                 </button>
               </div>
             </div>
@@ -114,10 +118,10 @@ export default function FeaturedProperties() {
         {/* Mobile View All Button */}
         <div className="md:hidden mt-8 text-center">
           <Link
-            href="#register"
-            className="inline-flex items-center gap-2 bg-white border border-gray-200 px-5 py-2.5 rounded-full text-sm font-medium hover:bg-gray-50 transition-colors"
+            href="#contact"
+            className="inline-flex items-center gap-2 bg-[#1F2937] text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-[#374151] transition-all hover:shadow-xl"
           >
-            Register Interest
+            Contact Us Now
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
