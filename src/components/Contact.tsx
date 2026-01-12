@@ -4,7 +4,8 @@ import { useState } from "react"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import * as z from "zod"
-import { MapPin, Phone, Mail, Clock, Send, CheckCircle, Loader2 } from "lucide-react"
+import { toast } from "sonner"
+import { MapPin, Phone, Mail, Clock, Send, Loader2 } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -31,8 +32,6 @@ type ContactFormValues = z.infer<typeof contactFormSchema>
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false)
-  const [isSuccess, setIsSuccess] = useState(false)
-  const [error, setError] = useState<string | null>(null)
 
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),
@@ -47,7 +46,6 @@ export default function Contact() {
 
   async function onSubmit(data: ContactFormValues) {
     setIsSubmitting(true)
-    setError(null)
 
     try {
       const response = await fetch("/api/contact", {
@@ -64,15 +62,14 @@ export default function Contact() {
         throw new Error(result.error || "Failed to send message")
       }
 
-      setIsSuccess(true)
+      toast.success("Message sent successfully!", {
+        description: "Thank you for reaching out. We'll contact you within 24 hours.",
+      })
       form.reset()
-
-      // Reset success message after 5 seconds
-      setTimeout(() => {
-        setIsSuccess(false)
-      }, 5000)
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Something went wrong. Please try again.")
+      toast.error("Failed to send message", {
+        description: err instanceof Error ? err.message : "Something went wrong. Please try again.",
+      })
     } finally {
       setIsSubmitting(false)
     }
@@ -156,21 +153,6 @@ export default function Contact() {
             <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Send Us a Message</h3>
               <p className="text-gray-600 mb-8">Fill out the form below and we&apos;ll get back to you within 24 hours.</p>
-
-              {isSuccess && (
-                <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                  <p className="text-green-700 font-medium">
-                    Thank you! Your message has been sent successfully. We&apos;ll contact you soon.
-                  </p>
-                </div>
-              )}
-
-              {error && (
-                <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
-                  <p className="text-red-700 font-medium">{error}</p>
-                </div>
-              )}
 
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
