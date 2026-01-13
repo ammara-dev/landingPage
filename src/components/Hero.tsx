@@ -61,7 +61,7 @@ export default function Hero() {
 
           <Link
             href="#contact"
-            className="inline-flex items-center gap-2 bg-white text-[#1F2937] px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all hover:shadow-xl hover:scale-105"
+            className="inline-flex items-center gap-2 bg-white text-[#1F2937] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all hover:shadow-xl hover:scale-105"
             data-aos="fade-up"
             data-aos-delay="400"
           >
