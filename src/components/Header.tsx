@@ -120,7 +120,7 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-100">
+          <div className="md:hidden py-3 border-t border-gray-100">
             <nav className="flex flex-col gap-2">
               {navLinks.map((link) => (
                 <Link

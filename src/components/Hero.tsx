@@ -35,8 +35,7 @@ export default function Hero() {
         <div className="max-w-3xl" data-aos="fade-up">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-[#1F2937]/30 backdrop-blur-md text-gray-100 px-5 py-2.5 rounded-full text-sm mb-6 border border-[#1F2937]/40 shadow-lg">
-            <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
-            Premier Luxury Development in Dubai
+           Introducing a new Premier Luxury Development in Dubai
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6" data-aos="fade-up" data-aos-delay="100">
@@ -78,7 +77,6 @@ export default function Hero() {
                 key={index}
                 className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md text-white px-5 py-2.5 rounded-full text-sm border border-white/30 whitespace-nowrap hover:bg-white/20 transition-all"
               >
-                <span className="w-1.5 h-1.5 bg-white rounded-full"></span>
                 {item}
               </span>
             ))}
