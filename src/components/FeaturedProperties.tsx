@@ -9,7 +9,7 @@ const properties = [
     plotArea: "4,322 sq.ft",
     builtUp: "3,340 sq.ft",
     beds: 3,
-    image: "https://heightscountryclub.ae/wp-content/uploads/2024/05/The-Heights-Emaar.jpg",
+    image: "/3 bedroom.png",
     status: "Coming Soon",
   },
   {
@@ -19,7 +19,7 @@ const properties = [
     plotArea: "4,650 sq.ft",
     builtUp: "4,312 sq.ft",
     beds: 4,
-    image: "https://heightscountryclub.ae/wp-content/uploads/2024/04/heights-country-club-dubai.jpeg",
+    image: "/4 bedroom.png",
     status: "Coming Soon",
   },
   {
@@ -29,7 +29,7 @@ const properties = [
     plotArea: "6,538 sq.ft",
     builtUp: "5,760 sq.ft",
     beds: 5,
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
+    image: "/5 bedroom.png",
     status: "Coming Soon",
   },
 ];

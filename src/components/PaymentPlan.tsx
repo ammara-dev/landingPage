@@ -17,7 +17,7 @@ const paymentSteps = [
   },
   {
     icon: Home,
-    percentage: "10%",
+    percentage: "20%",
     title: "On Handover",
     description: "Final payment upon completion",
     color: "from-[#4B5563] to-[#1F2937]"

@@ -34,16 +34,16 @@ export default function Hero() {
         <div className="max-w-3xl" data-aos="fade-up">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-[#1F2937]/30 backdrop-blur-md text-gray-100 px-5 py-2.5 rounded-full text-sm mb-6 border border-[#1F2937]/40 shadow-lg">
-           Introducing a new Premier Luxury Development in Dubai
+            Introducing a new Premier Luxury Development in Dubai
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6" data-aos="fade-up" data-aos-delay="100">
             The Heights Country Club and Wellness by Emaar
           </h1>
-          
+
           <p className="text-white/90 text-lg md:text-xl mb-8 max-w-xl leading-relaxed" data-aos="fade-up" data-aos-delay="200">
-            An unparalleled 81 million square feet development with a valuation of over AED 55 billion. 
-            Located in the heart of Dubai, this stunning new freehold project is poised to transform 
+            An unparalleled 81 million square feet development with a valuation of over AED 55 billion.
+            Located in the heart of Dubai, this stunning new freehold project is poised to transform
             the landscape of luxury living in the UAE.
           </p>
 
