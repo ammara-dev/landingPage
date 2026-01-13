@@ -21,11 +21,11 @@ export default function Home() {
       <Hero />
       <LuxuryLiving />
       <Amenities />
+      <Excellence />
       <FeaturedProperties />
       <FloorPlan />
       <Gallery />
       <Location />
-      <Excellence />
       <PaymentPlan />
       <FAQ />
       {/* <Testimonials /> */}

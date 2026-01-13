@@ -2,40 +2,35 @@ import Image from "next/image";
 import { ArrowRight, MapPin, TreePine, Bike, Store, Waves, CheckCircle2 } from "lucide-react";
 
 const keyFeatures = [
-  { 
+  {
     icon: MapPin,
-    title: "Multiple Entry & Exit Points", 
-    description: "In nearly all directions for easy access" 
+    title: "Multiple Entry & Exit Points",
+    description: "In nearly all directions for easy access"
   },
-  { 
+  {
     icon: TreePine,
-    title: "81M+ Sq. Ft Land Area", 
-    description: "Vast development spanning incredible space" 
+    title: "81M+ Sq. Ft Land Area",
+    description: "Vast development spanning incredible space"
   },
-  { 
+  {
     icon: Bike,
-    title: "38km Cycling Track", 
-    description: "Extensive paths for active lifestyle" 
+    title: "38km Cycling Track",
+    description: "Extensive paths for active lifestyle"
   },
-  { 
-    icon: TreePine,
-    title: "1.36M Sq. M Open Space", 
-    description: "Thoughtfully planned green areas" 
-  },
-  { 
+  {
     icon: Store,
-    title: "40,000 Sq. M Retail", 
-    description: "Comprehensive shopping and dining" 
+    title: "40,000 Sq. M Retail",
+    description: "Comprehensive shopping and dining"
   },
-  { 
+  {
     icon: Waves,
-    title: "4 Separate Lagoons", 
-    description: "Serene water features throughout" 
+    title: "4 Separate Lagoons",
+    description: "Serene water features throughout"
   },
-  { 
+  {
     icon: TreePine,
-    title: "Vast Green Parks", 
-    description: "Parks spread throughout the community" 
+    title: "Vast Green Parks",
+    description: "Parks spread throughout the community"
   },
 ];
 
@@ -99,7 +94,7 @@ export default function Excellence() {
                 A Masterfully Planned Community
               </h3>
               <p className="text-white/90 leading-relaxed">
-                The Heights Country Club features an extraordinary master plan with unparalleled connectivity, 
+                The Heights Country Club features an extraordinary master plan with unparalleled connectivity,
                 vast open spaces, and world-class amenities designed for modern luxury living.
               </p>
             </div>
