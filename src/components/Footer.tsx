@@ -27,12 +27,12 @@ export default function Footer() {
               Experience luxury living harmonized with nature in Dubai&apos;s most exclusive 
               wellness-focused community.
             </p>
-            <Link
+            <a
               href="#contact"
               className="inline-flex items-center gap-2 bg-[#1F2937] text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-[#374151] transition-all hover:shadow-xl hover:scale-105"
             >
               Contact Us Now
-            </Link>
+            </a>
           </div>
 
           {/* Right Section */}

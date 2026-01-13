@@ -1,5 +1,4 @@
 import { ArrowRight } from "lucide-react";
-import Link from "next/link";
 import Image from "next/image";
 
 const highlights = [
@@ -58,7 +57,7 @@ export default function Hero() {
             ))}
           </div>
 
-          <Link
+          <a
             href="#contact"
             className="inline-flex items-center gap-2 bg-white text-[#1F2937] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all hover:shadow-xl hover:scale-105"
             data-aos="fade-up"
@@ -66,7 +65,7 @@ export default function Hero() {
           >
             Contact Us Now
             <ArrowRight className="w-5 h-5" />
-          </Link>
+          </a>
         </div>
 
         {/* Specializing In */}

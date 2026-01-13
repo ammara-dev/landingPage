@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { ArrowRight, Plus, Minus } from "lucide-react";
 
 const faqs = [
@@ -13,7 +12,7 @@ const faqs = [
   {
     question: "What types of properties are available at The Heights?",
     answer:
-      "The Heights offers an extensive selection of 3, 4, and 5-bedroom villas, as well as larger 4, 5, and 6-bedroom luxury villas. The development also includes townhouses with various bedroom configurations, designs, and styles.",
+      "The Heights offers an extensive selection of 3, 4, and 5-bedroom villas and townhouses, as well as larger 4, 5, and 6-bedroom luxury villas. The development also includes townhouses with various bedroom configurations, designs, and styles.",
   },
   {
     question: "What is the payment plan for The Heights?",
@@ -76,13 +75,13 @@ export default function FAQ() {
 
         {/* Read More Button */}
         <div className="mt-8 text-center">
-          <Link
+          <a
             href="#contact"
             className="inline-flex items-center gap-2 bg-white border border-gray-200 px-5 py-2.5 rounded-full text-sm font-medium hover:bg-gray-50 transition-colors"
           >
             Contact Us for More Info
             <ArrowRight className="w-4 h-4" />
-          </Link>
+          </a>
         </div>
       </div>
     </section>

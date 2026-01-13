@@ -9,7 +9,6 @@ import {
   Building,
   Sparkles
 } from "lucide-react";
-import Link from "next/link";
 
 const amenities = [
   {
@@ -108,13 +107,13 @@ export default function Amenities() {
               These amenities, combined with contemporary living spaces and breathtaking views, 
               ensure a luxurious and balanced lifestyle for all residents.
             </p>
-            <Link
+            <a
               href="#contact"
               className="inline-flex items-center gap-2 bg-white text-[#1F2937] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all hover:shadow-xl hover:scale-105"
             >
               Discover More
               <Sparkles className="w-4 h-4" />
-            </Link>
+            </a>
           </div>
         </div>
       </div>

@@ -81,7 +81,7 @@ export default function Header() {
           {/* Navigation */}
           <nav className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => (
-              <Link
+              <a
                 key={link.name}
                 href={link.href}
                 onClick={() => handleNavClick(link.sectionId)}
@@ -92,18 +92,18 @@ export default function Header() {
                 }`}
               >
                 {link.name}
-              </Link>
+              </a>
             ))}
           </nav>
 
           {/* CTA Button */}
-          <Link
+          <a
             href="#contact"
             className="hidden md:flex items-center gap-2 bg-gray-900 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors"
           >
             Contact Us
             <ArrowUpRight className="w-4 h-4" />
-          </Link>
+          </a>
 
           {/* Mobile Menu Button */}
           <button
@@ -123,7 +123,7 @@ export default function Header() {
           <div className="md:hidden py-3 border-t border-gray-100">
             <nav className="flex flex-col gap-2">
               {navLinks.map((link) => (
-                <Link
+                <a
                   key={link.name}
                   href={link.href}
                   onClick={() => handleNavClick(link.sectionId)}
@@ -134,16 +134,16 @@ export default function Header() {
                   }`}
                 >
                   {link.name}
-                </Link>
+                </a>
               ))}
-              <Link
-                href="#register"
+              <a
+                href="#contact"
                 onClick={() => setMobileMenuOpen(false)}
                 className="flex items-center justify-center gap-2 bg-gray-900 text-white px-5 py-3 rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors mt-2"
               >
                 Register Interest
                 <ArrowUpRight className="w-4 h-4" />
-              </Link>
+              </a>
             </nav>
           </div>
         )}

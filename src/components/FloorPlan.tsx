@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Bed, Car, Home, TreePine, CheckCircle2 } from "lucide-react";
-import Link from "next/link";
 
 const floorPlans = [
   {
@@ -59,7 +58,7 @@ export default function FloorPlan() {
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto text-lg">
             Explore the exclusive floor plans for The Heights Country Club by Emaar Properties. 
-            This esteemed development features a range of 3, 4, and 5-bedroom townhouses, 
+            This esteemed development features a range of 3, 4, and 5-bedroom villas and townhouses, 
             each designed to offer luxury and comfort.
           </p>
         </div>
@@ -123,13 +122,13 @@ export default function FloorPlan() {
                   ))}
                 </div>
 
-                <Link
+                <a
                   href="#contact"
                   className="inline-flex items-center gap-2 bg-[#1F2937] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#374151] transition-all hover:shadow-xl hover:scale-105"
                 >
                   Request More Details
                   <Home className="w-4 h-4" />
-                </Link>
+                </a>
               </div>
             </div>
           ))}
@@ -144,13 +143,13 @@ export default function FloorPlan() {
             Each townhouse is crafted with attention to detail, ensuring a luxurious living experience 
             in one of Dubai&apos;s most desirable communities.
           </p>
-          <Link
+          <a
             href="#contact"
             className="inline-flex items-center gap-2 bg-white text-[#1F2937] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all hover:shadow-xl hover:scale-105"
           >
             Schedule a Viewing
             <TreePine className="w-4 h-4" />
-          </Link>
+          </a>
         </div>
       </div>
     </section>

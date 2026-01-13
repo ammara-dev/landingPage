@@ -1,5 +1,4 @@
 import { DollarSign, TrendingUp, Home, CheckCircle2 } from "lucide-react";
-import Link from "next/link";
 
 const paymentSteps = [
   {
@@ -87,13 +86,13 @@ export default function PaymentPlan() {
                 With the first release at The Heights just weeks away, the complete schedule of payments 
                 with dates and exact percentages is expected to be revealed imminently.
               </p>
-              <Link
+              <a
                 href="#contact"
                 className="inline-flex items-center gap-2 bg-white text-[#1F2937] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all hover:shadow-xl hover:scale-105"
               >
                 Get Full Payment Details
                 <DollarSign className="w-4 h-4" />
-              </Link>
+              </a>
             </div>
             <div className="space-y-3">
               {benefits.map((benefit, index) => (

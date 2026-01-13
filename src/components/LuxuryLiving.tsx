@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 export default function LuxuryLiving() {
@@ -31,13 +30,13 @@ export default function LuxuryLiving() {
               of thoughtfully planned open space.
             </p>
 
-            <Link
+            <a
               href="#contact"
               className="inline-flex items-center gap-2 bg-[#1F2937] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#374151] transition-all hover:shadow-xl hover:scale-105"
             >
               Learn More
               <ArrowRight className="w-5 h-5" />
-            </Link>
+            </a>
           </div>
 
           {/* Image */}

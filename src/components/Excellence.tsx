@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { ArrowRight, MapPin, TreePine, Bike, Store, Waves, CheckCircle2 } from "lucide-react";
 
 const keyFeatures = [
@@ -54,13 +53,13 @@ export default function Excellence() {
               Discover the exceptional features that make The Heights a world-class community
             </p>
           </div>
-          <Link
+          <a
             href="#contact"
             className="hidden md:flex items-center gap-2 bg-[#1F2937] text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-[#374151] transition-all hover:shadow-xl hover:scale-105"
           >
             Contact Us Now
             <ArrowRight className="w-4 h-4" />
-          </Link>
+          </a>
         </div>
 
         {/* Features Grid */}

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { ArrowRight, Bed, Square, Maximize } from "lucide-react";
 
 const properties = [
@@ -46,18 +45,18 @@ export default function FeaturedProperties() {
               Properties at The Heights
             </h2>
             <p className="text-gray-600 text-lg">
-              Discover an extensive selection of luxurious villas designed to offer
+              Discover an extensive selection of luxurious villas and townhouses designed to offer
               <br />
               an unmatched living experience at The Heights Country Club & Wellness.
             </p>
           </div>
-          <Link
+          <a
             href="#contact"
             className="hidden md:flex items-center gap-2 bg-[#1F2937] text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-[#374151] transition-all hover:shadow-xl hover:scale-105"
           >
             Contact Us Now
             <ArrowRight className="w-4 h-4" />
-          </Link>
+          </a>
         </div>
 
         {/* Property Grid */}
@@ -106,9 +105,9 @@ export default function FeaturedProperties() {
                 </div>
 
                 <button className="w-full mt-6 bg-[#1F2937] text-white py-3 rounded-full font-semibold hover:bg-[#374151] transition-all hover:shadow-lg">
-                  <Link href="#contact" className="block">
+                  <a href="#contact" className="block">
                     Contact Us
-                  </Link>
+                  </a>
                 </button>
               </div>
             </div>
@@ -117,13 +116,13 @@ export default function FeaturedProperties() {
 
         {/* Mobile View All Button */}
         <div className="md:hidden mt-8 text-center">
-          <Link
+          <a
             href="#contact"
             className="inline-flex items-center gap-2 bg-[#1F2937] text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-[#374151] transition-all hover:shadow-xl"
           >
             Contact Us Now
             <ArrowRight className="w-4 h-4" />
-          </Link>
+          </a>
         </div>
       </div>
     </section>
