@@ -17,7 +17,7 @@ const specializations = [
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen pt-16">
+    <section id="home" className="relative h-200 py-10">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -31,7 +31,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-32">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24">
         <div className="max-w-3xl" data-aos="fade-up">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-[#1F2937]/30 backdrop-blur-md text-gray-100 px-5 py-2.5 rounded-full text-sm mb-6 border border-[#1F2937]/40 shadow-lg">
