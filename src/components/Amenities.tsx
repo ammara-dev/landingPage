@@ -1,13 +1,14 @@
-import { 
-  Waves, 
-  Dumbbell, 
-  TreePine, 
-  Bike, 
-  ShoppingBag, 
+import {
+  Waves,
+  Dumbbell,
+  TreePine,
+  Bike,
+  ShoppingBag,
   GraduationCap,
   Baby,
   Building,
-  Sparkles
+  Sparkles,
+  MapPin
 } from "lucide-react";
 
 const amenities = [
@@ -17,9 +18,19 @@ const amenities = [
     description: "State-of-the-art country club and wellness centre",
   },
   {
+    icon: MapPin,
+    title: "Multiple Entry & Exit Points",
+    description: "In nearly all directions for easy access",
+  },
+  {
+    icon: TreePine,
+    title: "81M+ Sq. Ft Land Area",
+    description: "Vast development spanning incredible space",
+  },
+  {
     icon: ShoppingBag,
-    title: "Retail Outlets",
-    description: "Convenient shopping and dining options",
+    title: "40,000 Sq. M Retail",
+    description: "Comprehensive shopping and dining",
   },
   {
     icon: TreePine,
@@ -32,14 +43,19 @@ const amenities = [
     description: "Multiple pools for residents",
   },
   {
+    icon: Waves,
+    title: "4 Separate Lagoons",
+    description: "Serene water features throughout",
+  },
+  {
     icon: Dumbbell,
     title: "Fitness Areas",
     description: "Indoor/Outdoor fitness facilities",
   },
   {
     icon: Bike,
-    title: "38 Cycling Tracks",
-    description: "Extensive cycling and jogging paths",
+    title: "38km Cycling Track",
+    description: "Extensive paths for active lifestyle",
   },
   {
     icon: Baby,
@@ -59,7 +75,7 @@ export default function Amenities() {
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#1F2937] opacity-5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#1F2937] opacity-5 rounded-full blur-3xl"></div>
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-16" data-aos="fade-up">
@@ -71,7 +87,7 @@ export default function Amenities() {
             World Class Amenities and Facilities
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto text-lg">
-            At The Heights by Emaar, residents are treated to an array of premier amenities 
+            At The Heights by Emaar, residents are treated to an array of premier amenities
             that blend wellness, relaxation, and luxury. Designed for an active and healthy lifestyle.
           </p>
         </div>
@@ -102,9 +118,9 @@ export default function Amenities() {
               State-Of-The-Art Amenities With Serene Landscapes
             </h3>
             <p className="text-white/80 max-w-3xl mx-auto mb-6 leading-relaxed">
-              Beautifully landscaped parks provide serene settings for outdoor activities, 
-              while event plazas host a variety of wellness events, yoga sessions, and community gatherings. 
-              These amenities, combined with contemporary living spaces and breathtaking views, 
+              Beautifully landscaped parks provide serene settings for outdoor activities,
+              while event plazas host a variety of wellness events, yoga sessions, and community gatherings.
+              These amenities, combined with contemporary living spaces and breathtaking views,
               ensure a luxurious and balanced lifestyle for all residents.
             </p>
             <a

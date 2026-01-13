@@ -5,7 +5,6 @@ import FeaturedProperties from "@/components/FeaturedProperties";
 import Gallery from "@/components/Gallery";
 import Amenities from "@/components/Amenities";
 import Location from "@/components/Location";
-import Excellence from "@/components/Excellence";
 import FAQ from "@/components/FAQ";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
@@ -21,7 +20,6 @@ export default function Home() {
       <Hero />
       <LuxuryLiving />
       <Amenities />
-      <Excellence />
       <FeaturedProperties />
       <FloorPlan />
       <Gallery />
