@@ -1,5 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import heroImg from "../../public/hero-cover.jpeg";
+
 
 const highlights = [
   { value: "81M", label: "Sq. Ft Development" },
@@ -20,7 +22,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="https://heightscountryclub.ae/wp-content/uploads/2024/04/heights-country-club-dubai.jpeg"
+          src={heroImg}
           alt="The Heights Country Club Dubai"
           fill
           className="object-cover"
