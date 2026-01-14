@@ -202,12 +202,6 @@ export default function Gallery() {
                           className="object-cover transition-transform duration-700 group-hover:scale-110"
                         />
                         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
-                        <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                          <div className="bg-white/90 backdrop-blur-sm p-4 rounded-xl">
-                            <p className="font-bold text-gray-900">{image.alt}</p>
-                            <span className="text-sm text-gray-600">{image.category}</span>
-                          </div>
-                        </div>
                       </div>
                     ))}
                 </div>
@@ -228,10 +222,6 @@ export default function Gallery() {
                     fill
                     className="object-cover"
                   />
-                  <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm p-4 rounded-xl">
-                    <p className="font-bold text-gray-900 text-sm">{image.alt}</p>
-                    <span className="text-xs text-gray-600">{image.category}</span>
-                  </div>
                 </div>
               ))}
             </div>
