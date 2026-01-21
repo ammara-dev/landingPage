@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import * as z from "zod"
@@ -138,11 +139,16 @@ export default function Contact() {
 
             {/* Map or Image */}
             <div className="relative h-48 rounded-xl overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center">
+              <Image
+                src="/height-brochure-images/6.jpg"
+                alt="The Heights Location"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent flex items-end justify-center pb-4">
                 <div className="text-center text-white">
-                  <MapPin className="w-10 h-10 mx-auto mb-2 text-stone-400" />
                   <p className="font-medium">Dubai Hills Estate</p>
-                  <p className="text-sm text-gray-400">Mohammed Bin Rashid City</p>
+                  <p className="text-sm text-gray-300">Mohammed Bin Rashid City</p>
                 </div>
               </div>
             </div>

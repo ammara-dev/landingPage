@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   Waves,
   Dumbbell,
@@ -110,9 +111,17 @@ export default function Amenities() {
           ))}
         </div>
 
-        {/* Additional Info */}
+        {/* Additional Info with Background Image */}
         <div className="relative rounded-3xl overflow-hidden" data-aos="fade-up" data-aos-delay="400">
-          <div className="absolute inset-0 bg-gradient-to-br from-[#1F2937] via-[#374151] to-[#1F2937]"></div>
+          <div className="absolute inset-0">
+            <Image
+              src="/height-brochure-images/5.jpg"
+              alt="The Heights Amenities"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#1F2937]/95 via-[#1F2937]/85 to-[#1F2937]/75"></div>
+          </div>
           <div className="relative p-8 md:p-12 text-center">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
               State-Of-The-Art Amenities With Serene Landscapes

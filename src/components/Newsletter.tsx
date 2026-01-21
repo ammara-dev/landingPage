@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { toast } from "sonner"
 import { Loader2 } from "lucide-react"
 
@@ -57,7 +58,17 @@ export default function Newsletter() {
   return (
     <section id="register" className="py-16 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative rounded-2xl overflow-hidden bg-[#1F2937] p-8 md:p-12">
+        <div className="relative rounded-2xl overflow-hidden">
+          <div className="absolute inset-0">
+            <Image
+              src="/height-brochure-images/4.jpg"
+              alt="The Heights Newsletter"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-[#1F2937]/90"></div>
+          </div>
+          <div className="relative p-8 md:p-12">
           <div className="max-w-xl mx-auto text-center">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
               Register Your Interest Today
@@ -90,6 +101,7 @@ export default function Newsletter() {
                 )}
               </button>
             </form>
+          </div>
           </div>
         </div>
       </div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { DollarSign, TrendingUp, Home, CheckCircle2 } from "lucide-react";
 
 const paymentSteps = [
@@ -76,7 +77,17 @@ export default function PaymentPlan() {
         </div>
 
         {/* Benefits Section */}
-        <div className="bg-gradient-to-br from-[#1F2937] via-[#374151] to-[#1F2937] rounded-3xl p-8 md:p-12" data-aos="fade-up" data-aos-delay="300">
+        <div className="relative rounded-3xl overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+          <div className="absolute inset-0">
+            <Image
+              src="/height-brochure-images/3.jpg"
+              alt="The Heights Payment Plan"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#1F2937]/95 via-[#1F2937]/90 to-[#1F2937]/80"></div>
+          </div>
+          <div className="relative p-8 md:p-12">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
@@ -105,6 +116,7 @@ export default function PaymentPlan() {
                 </div>
               ))}
             </div>
+          </div>
           </div>
         </div>
 

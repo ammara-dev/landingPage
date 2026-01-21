@@ -43,7 +43,7 @@ export default function LuxuryLiving() {
           <div className="relative" data-aos="fade-up" data-aos-delay="200">
             <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/Community-view.jpg"
+                src="/height-brochure-images/2.jpg"
                 alt="The Heights Community View"
                 fill
                 className="object-cover"

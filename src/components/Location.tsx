@@ -77,7 +77,7 @@ export default function Location() {
           <div className="relative" data-aos="fade-up" data-aos-delay="200">
             <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
               <Image
-                src="/The-Heights-Country-Club-Emaar-Location-map.jpg"
+                src="/height-brochure-images/34.jpg"
                 alt="The Heights Location Map"
                 fill
                 className="object-cover"
