@@ -135,7 +135,7 @@ export default function FloorPlan() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-20 text-center bg-gradient-to-br from-[#1F2937] to-[#374151] rounded-3xl p-8 md:p-12" data-aos="fade-up">
+        <div className="mt-20 items-center text-start lg:text-center bg-gradient-to-br from-[#1F2937] to-[#374151] rounded-3xl p-8 md:p-12" data-aos="fade-up">
           <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
             Discover the Perfect Home for Your Family
           </h3>

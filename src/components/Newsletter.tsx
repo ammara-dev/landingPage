@@ -69,7 +69,7 @@ export default function Newsletter() {
             <div className="absolute inset-0 bg-[#1F2937]/90"></div>
           </div>
           <div className="relative p-8 md:p-12">
-          <div className="max-w-xl mx-auto text-center">
+          <div className="max-w-xl mx-auto items-center text-start lg:text-center">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
               Register Your Interest Today
             </h3>
@@ -77,7 +77,7 @@ export default function Newsletter() {
               Be among the first to receive details of the first-ever launch within The Heights community by Emaar.
             </p>
 
-            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md lg:mx-auto">
               <input
                 type="email"
                 value={email}

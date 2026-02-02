@@ -14,7 +14,6 @@ const navLinks = [
   { name: "Floor Plans", href: "#floor-plan", sectionId: "floor-plan" },
   { name: "Location", href: "#location", sectionId: "location" },
   { name: "Payment Plan", href: "#payment-plan", sectionId: "payment-plan" },
-  { name: "Contact", href: "#contact", sectionId: "contact" },
 ];
 
 export default function Header() {
@@ -74,7 +73,7 @@ export default function Header() {
           </Link>
 
           {/* Navigation */}
-          <nav className="hidden md:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center gap-1">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -94,7 +93,7 @@ export default function Header() {
           {/* CTA Button */}
           <a
             href="#contact"
-            className="hidden md:flex items-center gap-2 bg-white text-primary px-5 py-2.5 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
+            className="hidden lg:flex items-center gap-2 bg-white text-primary px-5 py-2.5 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
           >
             Contact Us
             <ArrowUpRight className="w-4 h-4" />
@@ -102,20 +101,20 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2"
+            className="lg:hidden p-2"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? (
-              <X className="w-6 h-6" />
+              <X className="w-6 h-6 text-white" />
             ) : (
-              <Menu className="w-6 h-6" />
+              <Menu className="w-6 h-6 text-white" />
             )}
           </button>
         </div>
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-3 border-t border-gray-100">
+          <div className="lg:hidden py-3 border-t mt-2 border-gray-100">
             <nav className="flex flex-col gap-2">
               {navLinks.map((link) => (
                 <a
@@ -124,8 +123,8 @@ export default function Header() {
                   onClick={() => handleNavClick(link.sectionId)}
                   className={`px-4 py-3 text-sm font-medium rounded-lg transition-colors ${
                     activeSection === link.sectionId
-                      ? "bg-gray-900 text-white"
-                      : "text-gray-600 hover:bg-gray-100"
+                      ? "bg-white text-gray-900"
+                      : "text-white hover:bg-gray-100"
                   }`}
                 >
                   {link.name}
@@ -134,7 +133,7 @@ export default function Header() {
               <a
                 href="#contact"
                 onClick={() => setMobileMenuOpen(false)}
-                className="flex items-center justify-center gap-2 bg-gray-900 text-white px-5 py-3 rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors mt-2"
+                className="flex items-center justify-center gap-2 bg-white text-primary px-5 py-3 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors mt-2"
               >
                 Register Interest
                 <ArrowUpRight className="w-4 h-4" />
