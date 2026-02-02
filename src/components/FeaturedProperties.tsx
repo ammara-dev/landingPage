@@ -50,13 +50,6 @@ export default function FeaturedProperties() {
               an unmatched living experience at The Heights Country Club & Wellness.
             </p>
           </div>
-          <a
-            href="#contact"
-            className="hidden md:flex items-center gap-2 bg-[#1F2937] text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-[#374151] transition-all hover:shadow-xl hover:scale-105"
-          >
-            Contact Us Now
-            <ArrowRight className="w-4 h-4" />
-          </a>
         </div>
 
         {/* Property Grid */}
@@ -114,16 +107,7 @@ export default function FeaturedProperties() {
           ))}
         </div>
 
-        {/* Mobile View All Button */}
-        <div className="md:hidden mt-8 text-center">
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 bg-[#1F2937] text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-[#374151] transition-all hover:shadow-xl"
-          >
-            Contact Us Now
-            <ArrowRight className="w-4 h-4" />
-          </a>
-        </div>
+       
       </div>
     </section>
   );

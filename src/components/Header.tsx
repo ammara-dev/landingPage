@@ -3,6 +3,9 @@
 import Link from "next/link";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
+import Image from "next/image";
+import logo from "../../public/logo.png";
+
 
 const navLinks = [
   { name: "Home", href: "#home", sectionId: "home" },
@@ -59,23 +62,15 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm"
-          : "bg-white border-b border-gray-100"
+          ? "bg-gray-900 backdrop-blur-md  shadow-sm"
+          : "bg-gray-900 "
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="flex items-center gap-1">
-              <div className="flex gap-0.5 items-end">
-                <div className="w-1.5 h-4 bg-gray-900"></div>
-                <div className="w-1.5 h-6 bg-gray-900"></div>
-                <div className="w-1.5 h-8 bg-gray-900"></div>
-                <div className="w-1.5 h-5 bg-gray-900"></div>
-              </div>
-            </div>
-            <span className="font-bold text-gray-900 hidden sm:block">The Heights</span>
+            <Image src={logo} alt="Logo" width={90} height={90} />
           </Link>
 
           {/* Navigation */}
@@ -87,8 +82,8 @@ export default function Header() {
                 onClick={() => handleNavClick(link.sectionId)}
                 className={`px-4 py-2 text-sm font-medium rounded-full transition-all duration-300 ${
                   activeSection === link.sectionId
-                    ? "bg-gray-900 text-white"
-                    : "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+                    ? "bg-white text-primary"
+                    : "text-white hover:text-gray-900 hover:bg-gray-100"
                 }`}
               >
                 {link.name}
@@ -99,7 +94,7 @@ export default function Header() {
           {/* CTA Button */}
           <a
             href="#contact"
-            className="hidden md:flex items-center gap-2 bg-gray-900 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors"
+            className="hidden md:flex items-center gap-2 bg-white text-primary px-5 py-2.5 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
           >
             Contact Us
             <ArrowUpRight className="w-4 h-4" />

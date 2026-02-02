@@ -52,7 +52,7 @@ export default function FloorPlan() {
     <section id="floor-plan" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16" data-aos="fade-up">
+        <div className="items-center text-start lg:text-center mb-16" data-aos="fade-up">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             The Heights by Emaar Floor Plan
           </h2>
