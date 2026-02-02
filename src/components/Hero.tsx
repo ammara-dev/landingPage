@@ -18,7 +18,7 @@ const specializations = [
 
 export default function Hero() {
   return (
-    <section id="home" className="relative h-200 py-10">
+    <section id="home" className="relative min-h-[400px] md:min-h-[500px] py-4 md:py-6">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -32,14 +32,14 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 md:pt-16 pb-4 md:pb-6">
         <div className="max-w-3xl" data-aos="fade-up">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-[#1F2937]/30 backdrop-blur-md text-gray-100 px-5 py-2.5 rounded-full text-sm mb-6 border border-[#1F2937]/40 shadow-lg">
+          <div className="hidden lg:inline-flex items-center gap-2 bg-[#1F2937]/30 backdrop-blur-md text-gray-100 px-5 py-2.5 rounded-full text-sm mb-6 border border-[#1F2937]/40 shadow-lg">
             Introducing a new Premier Luxury Development in Dubai
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6" data-aos="fade-up" data-aos-delay="100">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight my-6" data-aos="fade-up" data-aos-delay="100">
             The Heights Country Club and Wellness by Emaar
           </h1>
 
@@ -50,11 +50,11 @@ export default function Hero() {
           </p>
 
           {/* Highlights */}
-          <div className="flex flex-col md:flex-row items-start md:flex-wrap gap-10 md:gap-20 mb-8" data-aos="fade-up" data-aos-delay="300">
+          <div className="flex flex-row items-start justify-between md:justify-normal md:flex-wrap gap-5 md:gap-20 mb-8" data-aos="fade-up" data-aos-delay="300">
             {highlights.map((item, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-white">{item.value}</div>
-                <div className="text-white/70 text-sm mt-1">{item.label}</div>
+                <div className="text-lg md:text-4xl font-bold text-white">{item.value}</div>
+                <div className="text-white/70 text-xs mt-1">{item.label}</div>
               </div>
             ))}
           </div>
@@ -72,7 +72,7 @@ export default function Hero() {
 
         {/* Specializing In */}
         <div className="mt-16" data-aos="fade-up" data-aos-delay="500">
-          <div className="flex flex-col md:flex-row gap-3">
+          <div className="hidden lg:flex flex-col md:flex-row gap-3">
             {specializations.map((item, index) => (
               <span
                 key={index}
